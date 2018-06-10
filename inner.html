@@ -7,6 +7,10 @@
 <body>
 <header class="main-header">
     <a href="#"><span class="logo">DEVICE</span></a>
+    <form class="Search" method="get" action="https://echo.htmlacademy.ru">
+        <input name="keywords" placeholder="Поиск по сайту">
+        <button class="visually-hidden" type="submit">Поиск</button>
+    </form>
     <nav>
         <ul class="user-navigation">
             <li><a href="#">войти</a></li>
@@ -40,36 +44,81 @@
         <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
     <div class="sort-bar">
-        <!-- Здесь будет форма -->
+        <span>Фильтр:</span>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+                <legend>Стоимость</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Цвет</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="black" id="black" checked>
+                    <label for="black">Черный</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="white" id="white">
+                    <label for="white">Белый</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="blue" id="blue" checked>
+                    <label for="blue">Синий</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="red" id="red" checked>
+                    <label for="red">Красный</label>
+                <li>
+                    <input type="checkbox" name="pink" id="pink">
+                    <label for="pink">Розовый</label>
+                </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Bluetooth</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="BT" value="1" id="filter-BT-1" checked>
+                        <label for="filter-BT-1">Есть</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="BT" value="0" id="filter-BT-0">
+                        <label for="filter-BT-0">Нет</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+        </form>
         <span>Сортировка:</span>
         <ul>
-            <li> По цене</li>
-            <li>По типу</li>
-            <li>По популярности</li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+            <li><a href="#">Ввверх</a></li>
+            <li><a href="#">Вниз</a></li>
         </ul>
     </div>
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <section class="catalog">
-        <h2 class="visually-hidden">список моноподов</h2>
+        <h2 class="visually-hidden">Cписок моноподов</h2>
         <ul class="catalog-list">
             <li class="catalog-item">
                 <div class="card-product">
                     <!-- Добавление в корзину -->
                     <div class="button">В КОРЗИНУ</div>
                     <div class="button-comparison">Добавить к сравнению</div>
-                    <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
+                    <img src="/img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
                 </div>
-                <a href="#">Любительская селфи палка</a>
+                <h3 class="list-item"><a href="#">Любительская селфи палка</a></h3>
                 <span class="catalog-item-price">500 руб.</span>
             </li>
             <li class="catalog-item">
                 <div class="card-product">
-                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
+                    <img src="/img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
                     <!-- Добавление в корзину -->
                     <div class="button">В КОРЗИНУ</div>
                     <div class="button-comparison">Добавить к сравнению</div>
                 </div>
-                <a href="#">Профессиональная селфи палка</a>
+                <h3 class="list-item"><a href="#">Профессиональная селфи палка</a></h3>
                 <span class="catalog-item-price">1500 руб.</span>
             </li>
             <li class="catalog-item">
@@ -77,9 +126,9 @@
                     <!-- Добавление в корзину -->
                     <div class="button">В КОРЗИНУ</div>
                     <div class="button-comparison">Добавить к сравнению</div>
-                    <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи палка">
+                    <img src="/img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи палка">
                 </div>
-                <a href="catalog-item.html">Непотопляемая селфи палка</a>
+                <h3 class="list-item"><a href="#">Непотопляемая селфи палка</a></h3>
                 <span class="catalog-item-price"> 2500 руб.</span>
             </li>
             <li class="catalog-item">
@@ -87,9 +136,9 @@
                     <!-- Добавление в корзину -->
                     <div class="button">В КОРЗИНУ</div>
                     <div class="button-comparison">Добавить к сравнению</div>
-                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи палка Следуй за мной">
+                    <img src="/img/item-4.jpg" width="360" height="380" alt="Селфи палка Следуй за мной">
                 </div>
-                <a href="catalog-item.html">Селфи палка "Сдедуй за мной"</a>
+                <h3 class="list-item"><a href="#">Селфи палка "Сдедуй за мной"</a></h3>
                 <span class="catalog-item-price">4900 руб.</span>
             </li>
         </ul>
