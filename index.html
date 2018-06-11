@@ -6,11 +6,13 @@
 </head>
 <body>
 <header class="main-header">
-    <a href="#"><span class="logo">DEVICE</span></a>
-    <form class="Search" method="get" action="https://echo.htmlacademy.ru">
-        <input name="keywords" placeholder="Поиск по сайту">
-        <button class="visually-hidden" type="submit">Поиск</button>
-    </form>
+    <a href="#">DEVICE</a>
+    <div class="Search">
+        <form  method="get" action="https://echo.htmlacademy.ru">
+            <input name="keywords" type="text" placeholder="Поиск по сайту">
+            <button class="visually-hidden" type="submit">Поиск</button>
+        </form>
+    </div>
     <nav>
         <ul class="user-navigation">
             <li><a href="#">войти</a></li>
@@ -19,8 +21,8 @@
             <li><a href="#">Сравнить</a></li>
             <li><a href="#">Корзина</a></li>
         </ul>
-        <ul class="catalog">
-            <li><a href="/inner.html">Каталог товаров</a>
+        <ul class="mene-navigation">
+            <li><a href="inner.html">Каталог товаров</a>
                 <ul class="catalog-menu">
                     <li><a href="#">Виртуальная реальность</a></li>
                     <li><a href="#">Моноподы для селфи</a></li>
@@ -40,7 +42,7 @@
     <!-- начало первого слайдера-->
     <section class="product-slader">
         <div class="slade">
-            <img src="/img/slider-1.png" width="384" height="486" alt="Самая длинная селфи палка">
+            <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи палка">
             <div class="slade-product-description">
                 <div class="product-title">
                     Делай селфи, как Бен Стиллер
@@ -64,10 +66,9 @@
             </div>
         </div>
         <!--  конец первого слайдера -->
-
         <!-- начало второго слайдера-->
         <div class="slade">
-            <img src="/img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
             <div class="slade-product-description">
                 <div class="product-title">
                     Худеем правильно!
@@ -90,8 +91,8 @@
         <!--  конец второго слайдера -->
         <!-- начало третьего слайдера-->
         <div class="slade">
-            <img src="/img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            <div clacc="slade-product-description">
+            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+            <div class="slade-product-description">
                 <div class="product-title">
                     Порхает как бабочка, жалит как пчела!
                 </div>
@@ -180,10 +181,10 @@
     <!-- Строка с  логотипами -->
     <section class="partner-logos">
         <ul>
-            <li><a href=""><img src="/img/logo-1.jpg" width="260" height="100" alt="Логотип Djl"></a></li>
-            <li><a href=""><img src="/img/logo-2.jpg" width="260" height="100" alt="Логотип SP Gadgets"></a></li>
-            <li><a href=""><img src="/img/logo-3.jpg" width="260" height="100" alt="Логотип GoPro"></a></li>
-            <li><a href=""><img src="/img/logo-4.jpg" width="260" height="100" alt="Логотип Viva"></a></li>
+            <li><a href=""><img src="img/logo-1.jpg" width="260" height="100" alt="Логотип Djl"></a></li>
+            <li><a href=""><img src="img/logo-2.jpg" width="260" height="100" alt="Логотип SP Gadgets"></a></li>
+            <li><a href=""><img src="img/logo-3.jpg" width="260" height="100" alt="Логотип GoPro"></a></li>
+            <li><a href=""><img src="img/logo-4.jpg" width="260" height="100" alt="Логотип Viva"></a></li>
         </ul>
     </section>
     <section class="company">
@@ -219,13 +220,13 @@
                 Вы можете забрать товар сами, заехав в наш офис.Заодно вы сможете проверить работоспособность покупки.
                 Всякое бывает.
             </p>
-            <img src="/img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+            <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15"></a>
             <a class="button" href="#">Напишите нам</a>
         </div>
     </section>
 </main>
 <footer class="site-footer">
-    <a href="#"><span class="logo">DEVICE</span></a>
+    <a href="#">DEVICE</a>
     <p class="foot-adr">
         г. Москва ул. Строителей 15
     </p>
@@ -243,7 +244,7 @@
     </ul>
     <div class="footer-social">
         <!-- Соц сети  -->
-        <ul>
+        <ul class="visually-hidden">
             <li><a class="social-button" href="#">Вконтакте</a></li>
             <li><a class="social-button" href="#">Фейсбук</a></li>
             <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -252,16 +253,29 @@
     <span>+7(495)495-95-95</span>
     <a class="logo-academy" href="https://htmlacademy.ru"><img src="/img/logo-html.svg" alt="Создано HTML-Academy Логотип академии"></a>
 </footer>
-<form class="write-to-us" action="https://echo.htmlacademy.ru" method="post">
-    <button type="button" class="close">Закрыть</button>
-    <label for="letter">Ваше имя:</label>
-    <input id="letter" name="user" placeholder="Имя Фамилия">
-    <label for="mail-user">Ваш e-mail:</label>
-    <input id="mail-user" name="mail-user" placeholder="email@example.com"><br>
-    <laber>Текст письма:<br>
-        <textarea name="message">В свободной форме</textarea>
-    </laber>
-    <button type="submit">Отправить</button>
-</form>
+<div class="form-feedback">
+    <form class="write-to-us" action="https://echo.htmlacademy.ru" method="post">
+        <button type="button" class="close"><span class="visually-hidden">Закрыть</span></button>
+        <ul>
+            <li>
+                <label for="letter">Ваше имя:</label>
+                <input id="letter" name="user" placeholder="Имя Фамилия" type="text">
+            </li>
+            <li>
+                <label for="mail-user">Ваш e-mail:</label>
+                <input id="mail-user" name="mail-user" placeholder="email@example.com" type="text">
+            </li>
+            <li>
+                <label for="massage-user">Текст письма:</label>
+                <textarea name="message" id="massage-user">В свободной форме</textarea>
+            </li>
+        </ul>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+<div class="map=popap">
+    <button type="button" class="close"><span class="visually-hidden">Закрыть</span></button>
+    <img src="img/map-big.jpg">
+</div>
 </body>
 </html>
