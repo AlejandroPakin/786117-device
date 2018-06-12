@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
@@ -21,7 +23,7 @@
             <li><a href="#">Сравнить</a></li>
             <li><a href="#">Корзина</a></li>
         </ul>
-        <ul class="catalog">
+        <ul class="basic-navigation">
             <li><a href="#">Каталог товаров</a>
                 <ul class="catalog-menu">
                     <li><a href="#">Виртуальная реальность</a></li>
@@ -45,7 +47,7 @@
         <li><a href="#">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
-    <div class="sort-bar">
+    <section class="sort-bar">
         <span>Фильтр:</span>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
@@ -90,6 +92,8 @@
             </fieldset>
             <button type="submit">Показать</button>
         </form>
+    </section>
+    <section class="sorting-panel">
         <span>Сортировка:</span>
         <ul>
             <li><a href="#">По цене</a></li>
@@ -98,7 +102,7 @@
             <li><a href="#"><span class="visually-hidden">Ввверх</span></a></li>
             <li><a href="#"><span class="visually-hidden">Вниз</span></a></li>
         </ul>
-    </div>
+    </section>
     <section class="catalog">
         <h2 class="visually-hidden">список моноподов</h2>
         <ul class="catalog-list">
