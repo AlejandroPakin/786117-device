@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Девайс</title>
@@ -9,11 +9,11 @@
     <a href="#">DEVICE</a>
     <div class="Search">
         <form  method="get" action="https://echo.htmlacademy.ru">
-            <input name="keywords" type="text" placeholder="Поиск по сайту">
+            <input name="keywords" type="search" placeholder="Поиск по сайту">
             <button class="visually-hidden" type="submit">Поиск</button>
         </form>
     </div>
-    <nav>
+    <nav class="navigation">
         <ul class="user-navigation">
             <li><a href="#">войти</a></li>
         </ul>
@@ -39,14 +39,12 @@
     </nav>
 </header>
 <main class="container">
-   <div class="directory-part">
-       <h1 class="page-title">Моноподы для селфи</h1>
-       <ul class="breadcrumbs">
-           <li><a href="#">Главная</a></li>
-           <li><a href="#">Каталог товаров</a></li>
-           <li class="breadcrumbs-current">Моноподы для селфи</li>
-       </ul>
-   </div>
+    <h1 class="page-title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
+    </ul>
     <div class="sort-bar">
         <span>Фильтр:</span>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -101,12 +99,13 @@
             <li><a href="#"><span class="visually-hidden">Вниз</span></a></li>
         </ul>
     </div>
-    <div class="goods">
+    <section class="catalog">
+        <h2 class="visually-hidden">список моноподов</h2>
         <ul class="catalog-list">
             <li class="catalog-item">
                 <div class="card-product">
                     <!-- Добавление в корзину -->
-                    <div class=" visually-hidden">
+                    <div>
                         <button class="button" type="button">В КОРЗИНУ</button>
                         <button class="comparison" type="button">Добавить к сравнению</button>
                     </div>
@@ -117,12 +116,12 @@
             </li>
             <li class="catalog-item">
                 <div class="card-product">
-                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
                     <!-- Добавление в корзину -->
-                    <div class=" visually-hidden">
+                    <div>
                         <button class="button" type="button">В КОРЗИНУ</button>
                         <button class="comparison" type="button">Добавить к сравнению</button>
                     </div>
+                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
                 </div>
                 <h3 class="list-item"><a href="#">Профессиональная селфи палка</a></h3>
                 <span class="catalog-item-price">1500 руб.</span>
@@ -130,7 +129,7 @@
             <li class="catalog-item">
                 <div class="card-product">
                     <!-- Добавление в корзину -->
-                    <div class=" visually-hidden">
+                    <div>
                         <button class="button" type="button">В КОРЗИНУ</button>
                         <button class="comparison" type="button">Добавить к сравнению</button>
                     </div>
@@ -142,7 +141,7 @@
             <li class="catalog-item">
                 <div class="card-product">
                     <!-- Добавление в корзину -->
-                    <div class=" visually-hidden">
+                    <div>
                         <button class="button" type="button">В КОРЗИНУ</button>
                         <button class="comparison" type="button">Добавить к сравнению</button>
                     </div>
@@ -161,7 +160,7 @@
             </ul>
             <span class="b-naviq">ВПЕРЕД</span>
         </div>
-    </div>
+    </section>
 </main>
 <footer class="site-footer">
     <a href="#">DEVICE</a>
@@ -189,7 +188,7 @@
         </ul>
     </div>
     <span>+7(495)495-95-95</span>
-    <a class="logo-academy" href="https://htmlacademy.ru"><img src="/img/logo-html.svg" alt="Создано HTML-Academy Логотип академии"></a>
+    <a class="logo-academy" href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="Создано HTML-Academy Логотип академии"></a>
 </footer>
 </body>
 </html>

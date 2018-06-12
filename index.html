@@ -9,11 +9,11 @@
     <a href="#">DEVICE</a>
     <div class="Search">
         <form  method="get" action="https://echo.htmlacademy.ru">
-            <input name="keywords" type="text" placeholder="Поиск по сайту">
+            <input name="keywords" type="search" placeholder="Поиск по сайту">
             <button class="visually-hidden" type="submit">Поиск</button>
         </form>
     </div>
-    <nav>
+    <nav class="navigation">
         <ul class="user-navigation">
             <li><a href="#">войти</a></li>
         </ul>
@@ -21,7 +21,7 @@
             <li><a href="#">Сравнить</a></li>
             <li><a href="#">Корзина</a></li>
         </ul>
-        <ul class="mene-navigation">
+        <ul class="basic-navigation">
             <li><a href="inner.html">Каталог товаров</a>
                 <ul class="catalog-menu">
                     <li><a href="#">Виртуальная реальность</a></li>
@@ -244,14 +244,14 @@
     </ul>
     <div class="footer-social">
         <!-- Соц сети  -->
-        <ul class="visually-hidden">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+        <ul>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
     </div>
     <span>+7(495)495-95-95</span>
-    <a class="logo-academy" href="https://htmlacademy.ru"><img src="/img/logo-html.svg" alt="Создано HTML-Academy Логотип академии"></a>
+    <a class="logo-academy" href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="Создано HTML-Academy Логотип академии"></a>
 </footer>
 <div class="form-feedback">
     <form class="write-to-us" action="https://echo.htmlacademy.ru" method="post">
@@ -263,7 +263,7 @@
             </li>
             <li>
                 <label for="mail-user">Ваш e-mail:</label>
-                <input id="mail-user" name="mail-user" placeholder="email@example.com" type="text">
+                <input id="mail-user" name="mail-user" placeholder="email@example.com" type="email">
             </li>
             <li>
                 <label for="massage-user">Текст письма:</label>
