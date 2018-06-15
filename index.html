@@ -3,21 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
-    <a href="#">DEVICE</a>
+    <a class="logo-header" href="#">DEVICE</a>
     <div class="Search">
         <form  method="get" action="https://echo.htmlacademy.ru">
-            <input name="keywords" type="search" placeholder="Поиск по сайту">
+            <input class="search" name="keywords" type="search" placeholder="Поиск по сайту">
             <button class="visually-hidden" type="submit">Поиск</button>
         </form>
     </div>
     <nav class="navigation">
         <ul class="user-navigation">
-            <li><a href="#">войти</a></li>
+            <li><a href="#">Войти</a></li>
         </ul>
         <ul class="user-block">
             <li><a href="#">Сравнить</a></li>
@@ -53,16 +54,16 @@
                     Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной, и
                     весом всего 5 килограмм.</p>
                 <a class="button" href="#">Подробнее</a>
-                <table>
+                <table class="table">
                     <tr>
-                        <td>8,5 М</td>
-                        <td>5 КГ</td>
-                        <td>Карбон</td>
+                        <td class="characteristic">8,5 М</td>
+                        <td class="characteristic">5 КГ</td>
+                        <td class="characteristic">Карбон</td>
                     </tr>
                     <tr>
-                        <td>Длинна палки</td>
-                        <td>Вес палки</td>
-                        <td>Материал</td>
+                        <td class="clarification">Длинна палки</td>
+                        <td class="clarification">Вес палки</td>
+                        <td class="clarification">Материал</td>
                     </tr>
                 </table>
             </div>
@@ -79,12 +80,12 @@
                     Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
                 <a class="button" href="#">Подробнее</a>
-                <table>
+                <table class="table">
                     <tr>
-                        <td>48 часов</td>
+                        <td class="characteristic">48 часов</td>
                     </tr>
                     <tr>
-                        <td>без позарядки</td>
+                        <td class="clarification">без позарядки</td>
                     </tr>
                 </table>
             </div>
@@ -103,14 +104,14 @@
                     камеру.
                 </p>
                 <a class="button" href="#">Подробнее</a>
-                <table>
+                <table class="table">
                     <tr>
-                        <td>800 М</td>
-                        <td>50 М</td>
+                        <td class="characteristic">800 М</td>
+                        <td class="characteristic">50 М</td>
                     </tr>
                     <tr>
-                        <td>Дальность полета</td>
-                        <td>Радиус поражения</td>
+                        <td class="clarification">Дальность полета</td>
+                        <td class="clarification">Радиус поражения</td>
                     </tr>
                 </table>
             </div>
@@ -129,7 +130,7 @@
             <a href="#">Экшен камеры</a>
         </li>
         <li>
-            <a href="#">Фитнес браслетыь</a>
+            <a href="#">Фитнес браслеты</a>
         </li>
         <li>
             <a href="#">Умные часы</a>
@@ -142,7 +143,7 @@
     <!-- Вторая линия слайдера -->
     <section class="services-slider">
         <div class="services-slider-controls">
-            <a class="button active" href="#">Доставка</a>
+            <a class="button-active" href="#">Доставка</a>
             <a class="button" href="#">Гарантия</a>
             <a class="button" href="#">Кредит</a>
         </div>
@@ -228,10 +229,8 @@
     </section>
 </main>
 <footer class="site-footer">
-    <a href="#">DEVICE</a>
-    <p class="foot-adr">
-        г. Москва ул. Строителей 15
-    </p>
+    <a class="logo-footer" href="#">DEVICE</a>
+    <p class="foot-adr">г. Москва ул. Строителей 15</p>
     <ul class="footer-user-navigation">
         <li><a href="#">Вход</a></li>
     </ul>
@@ -260,22 +259,22 @@
         <button type="button" class="close"><span class="visually-hidden">Закрыть</span></button>
         <ul>
             <li>
-                <label for="letter">Ваше имя:</label>
-                <input id="letter" name="user" placeholder="Имя Фамилия" type="text">
+                <label class="label" for="letter">Ваше имя:</label>
+                <input class="input" id="letter" name="user" placeholder="Имя Фамилия" type="text">
             </li>
             <li>
-                <label for="mail-user">Ваш e-mail:</label>
-                <input id="mail-user" name="mail-user" placeholder="email@example.com" type="email">
+                <label class="label" for="mail-user">Ваш e-mail:</label>
+                <input class="input" id="mail-user" name="mail-user" placeholder="email@example.com" type="email">
             </li>
             <li>
-                <label for="massage-user">Текст письма:</label>
-                <textarea name="message" id="massage-user">В свободной форме</textarea>
+                <label class="label" for="massage-user">Текст письма:</label>
+                <textarea class="letter" name="message" id="massage-user">В свободной форме</textarea>
             </li>
         </ul>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
     </form>
 </div>
-<div class="map=popap">
+<div class="map-popap">
     <button type="button" class="close"><span class="visually-hidden">Закрыть</span></button>
     <img src="img/map-big.jpg">
 </div>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet">
 <body>
 <header class="main-header">
-    <a href="#">DEVICE</a>
+    <a class="logo-header" href="#">DEVICE</a>
     <div class="Search">
         <form  method="get" action="https://echo.htmlacademy.ru">
             <input name="keywords" type="search" placeholder="Поиск по сайту">
@@ -17,7 +17,8 @@
     </div>
     <nav class="navigation">
         <ul class="user-navigation">
-            <li><a href="#">войти</a></li>
+            <li><a href="#">Валентин Петухов</a></li>
+            <li><a href="#">Выйти</a></li>
         </ul>
         <ul class="user-block">
             <li><a href="#">Сравнить</a></li>
@@ -47,53 +48,53 @@
         <li><a href="#">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
-    <section class="sort-bar">
+    <div class="sort-bar">
         <span>Фильтр:</span>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
-                <legend>Стоимость</legend>
+                <legend class="parameter">Стоимость</legend>
             </fieldset>
             <fieldset>
-                <legend>Цвет</legend>
+                <legend class="parameter">Цвет</legend>
             <ul>
                 <li>
                     <input type="checkbox" name="black" id="black" checked class="visually-hidden">
-                    <label for="black">Черный</label>
+                    <label class="feature" for="black">Черный</label>
                 </li>
                 <li>
                     <input type="checkbox" name="white" id="white" class="visually-hidden">
-                    <label for="white">Белый</label>
+                    <label class="feature" for="white">Белый</label>
                 </li>
                 <li>
                     <input type="checkbox" name="blue" id="blue" checked class="visually-hidden">
-                    <label for="blue">Синий</label>
+                    <label class="feature" for="blue">Синий</label>
                 </li>
                 <li>
                     <input type="checkbox" name="red" id="red" checked class="visually-hidden">
-                    <label for="red">Красный</label>
+                    <label class="feature" for="red">Красный</label>
                 <li>
                     <input type="checkbox" name="pink" id="pink" class="visually-hidden">
-                    <label for="pink">Розовый</label>
+                    <label class="feature" for="pink">Розовый</label>
                 </li>
             </ul>
             </fieldset>
             <fieldset>
-                <legend>Bluetooth</legend>
+                <legend class="parameter">Bluetooth</legend>
                 <ul>
                     <li>
                         <input type="radio" name="BT" value="1" id="filter-BT-1" checked>
-                        <label for="filter-BT-1">Есть</label>
+                        <label class="feature" for="filter-BT-1">Есть</label>
                     </li>
                     <li>
                         <input type="radio" name="BT" value="0" id="filter-BT-0">
-                        <label for="filter-BT-0">Нет</label>
+                        <label class="feature" for="filter-BT-0">Нет</label>
                     </li>
                 </ul>
             </fieldset>
             <button type="submit">Показать</button>
         </form>
-    </section>
-    <section class="sorting-panel">
+    </div>
+    <div class="sorting-panel">
         <span>Сортировка:</span>
         <ul>
             <li><a href="#">По цене</a></li>
@@ -102,7 +103,7 @@
             <li><a href="#"><span class="visually-hidden">Ввверх</span></a></li>
             <li><a href="#"><span class="visually-hidden">Вниз</span></a></li>
         </ul>
-    </section>
+    </div>
     <section class="catalog">
         <h2 class="visually-hidden">список моноподов</h2>
         <ul class="catalog-list">
@@ -167,7 +168,7 @@
     </section>
 </main>
 <footer class="site-footer">
-    <a href="#">DEVICE</a>
+    <a class="logo-footer" href="#">DEVICE</a>
     <p class="foot-adr">
         г. Москва ул. Строителей 15
     </p>
