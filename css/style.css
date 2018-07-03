@@ -2,37 +2,37 @@
     font-family: 'Gilroy';
     src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
     url('../fonts/gilroyextrabold.woff') format('woff');
-    font-weight: 900;
+    font-weight: 800;
     font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/gilroylight.woff2') format('woff2'),
     url('../fonts/gilroylight.woff') format('woff');
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'opensans';
     src: url('../fonts/opensans.woff2') format('woff2'),
     url('../fonts/opensans.woff') format('woff');
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'opensanslight';
     src: url('../fonts/opensanslight.woff2') format('woff2'),
     url('../fonts/opensanslight.woff') format('woff');
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
 }
 body {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans",Arial, sans-serif;
+    font-family: "opensans",Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 400;
     color: #464646;
 }
 a {
@@ -46,7 +46,6 @@ img {
 .container{
     width: 1160px;
     margin: 0 auto;
-    flex-wrap: wrap;
     padding: 0 0 0 0;
 }
 .search-block {
@@ -56,26 +55,26 @@ img {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin-top: -18px;
+    margin-left: -275px;
 }
 .search-block form {
     display: flex;
-
-}
-.search-block svg {
-    width: 20px;
-    margin-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .search-block .search {
     color: rgba(0, 0, 0, .3);
-    background-color: transparent;
     border: 0;
     width: 315px;
     outline: none;
-    margin-left: -40px;
     padding-left: 40px;
     height: 49px;
     border-bottom:2px solid transparent;
+    background: transparent url(../img/search.svg) left center no-repeat;
 }
+
 .search-block .search:hover{
     color:rgba(0,0,0,.6);
 }
@@ -105,10 +104,10 @@ img {
     color: #000000;
     font-size: 48px;
     line-height: 48px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
-    margin-top: -20px;
-    margin-bottom: 11px;
+    margin-top: -74px;
+    margin-bottom: 33px;
     display: block;
 }
 .logo-header:hover{
@@ -120,11 +119,13 @@ img {
 .user-block{
     font-size: 15px;
     line-height: 30px;
-    font-family: "Open Sans", Arial,sans-serif;
+    font-family: "opensans", Arial,sans-serif;
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
+    margin-top: -5px;
+    margin-right: 5px;
 }
 .user-block li:nth-last-child(2){
     margin:0 40px;
@@ -132,6 +133,8 @@ img {
 .user-navigation{
     list-style: none;
     display: flex;
+    margin-top: -5px;
+    margin-left: -60px;
 }
 .user-navigation svg, .user-block svg {
     margin-right: 14px;
@@ -140,27 +143,38 @@ img {
     color:rgba(0,0,0,.3);
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
 }
 li.exit a{
     color: rgba(0,0,0,0.3);
     margin-left: 19px;
 }
+.user-navigation a:hover{
+    color:rgba(0,0,0,.6);
+}
+.user-navigation a:active {
+    color: rgba(0, 0, 0, .3);
+}
+.user-block a:hover{
+    color:rgba(0,0,0,.6);
+}
+.user-block a:active {
+    color: rgba(0, 0, 0, .3);
+}
 .basic-navigation{
     color: #000000;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     text-transform: uppercase;
     list-style: none;
-
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
     width: 1038px;
-    margin:13px 60px 0;
+    margin:5px 0 0;
     align-content: flex-start;
 }
 .basic-navigation svg{
@@ -181,7 +195,7 @@ li.exit a{
     width: 180px;
     text-align: right;
 }
-.col-50-right{
+/*.col-50-right{
     display:flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -195,20 +209,20 @@ li.exit a{
 .col-50-right li {
     padding-top:10px;
     padding-bottom: 9px;
-}
+}*/
 .main-header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
 }
-.col-50-left{
+/*.col-50-left{
     display:flex;
     justify-content: flex-start;
     width: 3px;
     margin: 0 0 0 0;
     padding: 0 0 0 60px;
-}
+}*/
 .basic-navigation a:hover{
     color:rgba(0,0,0,.6);
 }
@@ -217,9 +231,9 @@ li.exit a{
 }
 .main-header{
     background-color:#f7e296;
-    width: 1160px;
-    height: 310px;
-}
+    padding:50px 60px 0 60px;
+
+    }
 .navigation{
     font-size: 15px;
     line-height: 30px;
@@ -261,9 +275,9 @@ li.exit a{
     align-content: flex-start;
 }
 .catalog-menu li {
-    font-family: "Open Sans",Arial, sans-serif;
+    font-family: "opensans",Arial, sans-serif;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 36px;
     text-transform: none;
 }
@@ -341,7 +355,7 @@ li:hover .catalog-menu {
     color: white;
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 179px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 131px;
     text-align: right;
     margin-right: -8px;
@@ -364,7 +378,7 @@ li:hover .catalog-menu {
     color: black;
     font-size: 47px;
     line-height: 56px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     margin-bottom: 17px;
     margin-top:-63px;
@@ -386,7 +400,7 @@ li:hover .catalog-menu {
     letter-spacing: 5px;
     font-size: 18px;
     line-height: 40px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", "Arial Black", sans-serif;
     text-transform: uppercase;
 }
@@ -483,7 +497,7 @@ li:hover .catalog-menu {
     color: #f7e184;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     text-transform: uppercase;
     background-color:#000000;
@@ -492,21 +506,21 @@ li:hover .catalog-menu {
     color: #000000;
     font-size: 36px;
     line-height: 48px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: "Gilroy", Arial, sans-serif;
 }
 .clarification{
     color: #000000;
     font-size: 13px;
     line-height: 20px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
 }
 .assortment-menu{
     color: #000000;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     list-style: none;
 }
@@ -577,7 +591,7 @@ li:hover .catalog-menu {
     color: #000000;
     font-size: 47px;
     line-height: 48px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     padding: 0;
     margin: 0 0 30px;
@@ -586,8 +600,8 @@ li:hover .catalog-menu {
     color: #000000;
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
 }
 .partner-logos .partner-logos-list {
     list-style: none;
@@ -630,7 +644,7 @@ li:hover .catalog-menu {
     color: #000000;
     font-size: 47px;
     line-height: 48px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     padding: 0;
     margin: 0 0 43px;
@@ -646,8 +660,8 @@ li:hover .catalog-menu {
     color: black;
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
     padding: 0;
     margin:0 0 30px;
 }
@@ -666,7 +680,7 @@ li:hover .catalog-menu {
     color: #000000;
     font-size: 16px;
     line-height: 30px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     list-style: none;
     padding: 0;
@@ -708,7 +722,7 @@ li:hover .catalog-menu {
     color:#FFC600;
     font-size:47px;
     line-height: 48px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     margin-bottom: 24px;
 }
@@ -722,8 +736,8 @@ li:hover .catalog-menu {
     color:#FFFFFF;
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
 }
 .foot-adr:after{
     content: '';
@@ -740,14 +754,14 @@ li:hover .catalog-menu {
     color:#FFFFFF;
     font-size:18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     list-style: none;;
 }
 .footer-navigation-item {
     font-family:  "Gilroy", Arial, sans-serif ;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 24px;
     text-transform: uppercase;
     margin: 0;
@@ -812,8 +826,8 @@ li:hover .catalog-menu {
     color: #FFFFFF;
     font-size: 15px;
     line-height: 36px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
     list-style: none;
     margin: 0;
     padding: 0 6px 0 0 ;
@@ -824,8 +838,8 @@ li:hover .catalog-menu {
     color: #FFFFFF;
     font-size: 15px;
     line-height: 36px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
     list-style: none;
     display: flex;
     margin: 0;
@@ -952,7 +966,7 @@ li:hover .catalog-menu {
     color: black;
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 24px;
     display: block;
     padding: 0;
@@ -995,22 +1009,22 @@ footer>span{
     color:#FFFFFF;
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
 }
 .label{
     color: #000000;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
 }
 .input{
     color: #000000;
     font-size: 14px;
     line-height: 18px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
     background-color:#F2F2F2;
 }
 
@@ -1018,8 +1032,8 @@ footer>span{
     color: #000000;
     font-size: 14px;
     line-height: 18px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
     background-color: #F2F2F2;
 }
 button{
@@ -1036,7 +1050,7 @@ button:active {}
     color: #000000;
     font-size: 47px;
     line-height: 48px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     padding: 0;
     margin: 40px 0 22px;
@@ -1044,7 +1058,7 @@ button:active {}
 .breadcrumbs {
     color:rgba(0,0,0,.3);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
     padding: 0;
     margin: 0 0 45px;
@@ -1145,7 +1159,7 @@ button:active {}
 .sorting-panel span{
     color: #000000;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     background-color:#EBEBEB;
     margin-right: 54px;
@@ -1161,8 +1175,8 @@ button:active {}
 .sorting-item{
     color:rgba(0,0,0,.3);
     font-size: 14px;
-    font-weight: 300;
-    font-family: "Open Sans",Arial, sans-serif;
+    font-weight: 400;
+    font-family: "opensans",Arial, sans-serif;
     background-color:#EBEBEB;
     padding: 0;
     margin:0 30px 0 0;
@@ -1204,7 +1218,7 @@ button:active {}
     color: #000000;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     background-color:#EBEBEB;
 }
@@ -1212,8 +1226,8 @@ button:active {}
     color:#000000;
     font-size: 14px;
     line-height: 40px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
     background-color:#EBEBEB;
 }
 
@@ -1221,15 +1235,15 @@ button:active {}
     color:rgba(0,0,0,.5);
     font-size: 13px;
     line-height: 36px;
-    font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-family: "opensans", "Arial", sans-serif;
 }
 
 .b-naviq{
     color:#000000;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     background-color:#EBEBEB;
 }
@@ -1237,7 +1251,7 @@ button:active {}
      color: #000000;
      font-size: 16px;
      line-height: 24px;
-     font-weight: 900;
+     font-weight: 800;
      font-family: "Gilroy", Arial, sans-serif;
     background-color:#EBEBEB;
  }
@@ -1245,7 +1259,7 @@ button:active {}
     color:rgba(0,0,0,.3);
     font-size: 16px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     background-color:#EBEBEB;
 }
@@ -1330,7 +1344,7 @@ button:active {}
     color:#464646;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: "Gilroy", Arial, sans-serif;
     width: 100px;
     text-align: right;
@@ -1342,7 +1356,7 @@ button:active {}
     font-size: 18px;
     line-height: 24px;
     height: 48px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Gilroy", Arial, sans-serif;
     width:260px;
 }
@@ -1379,7 +1393,7 @@ button:active {}
     color: rgba(0,0,0,.3);
     font-family: "Gilroy",Arial, sans-serif;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -1468,7 +1482,7 @@ button:active {}
     left: 109px
 }
 .range-label {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     font-family: "Gilroy", "Arial", sans-serif;
@@ -1486,7 +1500,7 @@ button:active {}
     width: 50px;
     margin: 0;
     padding: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     font-family: "Gilroy", "Arial", sans-serif;
